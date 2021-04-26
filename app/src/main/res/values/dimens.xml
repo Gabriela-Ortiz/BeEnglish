@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="altoLogo">60dp</dimen>
+    <dimen name="altoToolBar">50dp</dimen>
+    <dimen name="altoImageViewHome">150dp</dimen>
+    <dimen name="cardCornerRadius">8dp</dimen>
+    <dimen name="marginHomeSub">10sp</dimen>
+    <dimen name="tamanioTitulo">20sp</dimen>
+    <dimen name="tamanioTexto">16sp</dimen>
+    <dimen name="marginHomeSubTop">6dp</dimen>
+    <dimen name="itemScheduleTitulo">30sp</dimen>
+    <dimen name="itemScheduleSubTitulo">20sp</dimen>
+
+</resources>
+
+<!-- dp -> imagenes
+sp -> texto -->

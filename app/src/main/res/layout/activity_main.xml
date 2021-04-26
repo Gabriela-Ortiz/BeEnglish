@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+<!--lo que hace este atributo layout_behavior es que los componentes que se coloquen adentro del fragment
+se adecuen al limite del toolbar "nuevo", lo nuevos componentes que vallamos incluyendo
+deben verse debajo del toolbar "nuevo" ya sobrepuesto -->
+
+    </RelativeLayout>
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bnvMenu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolBar"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/altoToolBar"
+            android:layout_marginStart="130dp"
+            android:gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_app_be" />
+
+    </Toolbar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

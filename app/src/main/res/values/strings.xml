@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BeEnglish</string>
+
+    <string name="inicio_frag_que_es">¿Qué es Be English?</string>
+    <string name="inicio_frag_que_es_resp">Be english es una aplicación de facil acceso en donde puedes encontrar diversas presentaciones de temas de ingles en los cuales puedes profundizar dependiendo tu nivel, ademas puedes acceder a los tests de comprensión para validar tu progreso de aprendizaje</string>
+
+    <string name="inicio_frag_por_que">¿Por qué utilizar nuestra app?</string>
+    <string name="inicio_frag_por_que_resp">Ofrecemos un enfoque mas versatil para aprender y practicar diversos temas, puedes avanzar a tu ritmo y si tienes dudas en la seccion multimedia encontraras algunos videos que te ayudarán a reforzar los temas, el limite lo pones tu!</string>
+
+    <string name="inicio_frag_info">Requisistos para utilizar la app y contacto</string>
+
+    <string name="inicio_frang_info_resp">
+	&#8226; Ser ético y responsable con el material.
+	&#8226; Realizar el examen de colocacion en donde te sugeriremos una ruta de aprendizaje adecuada para ti.
+	&#8226; Dirección: Ciudad Adolfo Lopez Mateos. EDO MEX.
+    </string>
+    <string name="descripcionTema">En esta tema se abordan los conceptos de **** y *** asi como la manera de crear oraciones utilizando*** al final de esta seccion el alumno será capaz de interpretar la relacion que existe entre *** y su uso formal</string>
+    <string name="teacherBiografia">Profesional experto en el área de ****** con experiencia laboral en ****, imparte clases de ingles como lengua etranjera desde  **/**/**. Cuenta con proyectos tales como: </string>
+
+
+
+    <string name="hello_blank_fragment">holis</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--VAMOS A CREAR EL DISEÑO DE UNO DE LOS ITEMS-->
+
+    <!--VAMOS A ANIDAR-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"> <!--es horizantal porque
+        vamos a tener la hora y su "am y pm" en un lado y el nombre
+        del expositor y su tema del otro lado-->
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--hay un concepto en android llamado pesos que solo funciona
+            con LinearLayout, se da un peso especifico y nos permit adaptar la
+            proporcion de la pantalla a cualquier dispositivo telefono o tableta
+            el truco es colocar de ancho 0dp y de alto wrap_content-->
+
+            <!--layout_width nos marca un error ya que si lo dejamos
+           asi la vista seria invisible, por lo cual le agregamos
+           "layout_weight con el valor de 1 -->
+
+            <TextView
+                android:id="@+id/tvItemScheduleHour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:gravity="right|bottom"
+                android:textSize="@dimen/itemScheduleTitulo"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvItemScheduleAMPM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A.M."
+                android:gravity="right|top"
+                android:textSize="@dimen/itemScheduleSubTitulo"
+                android:textColor="@color/purple_700"/>
+            <!--el ID nos permite asignar un valor.
+            * El atributo gravity nos permite alinaer el contenido
+             en este caso del texto, en este caso se concatenan 2 posiciones
+             right -> a la dereche y bottom -> hacia abajo, TOP-> hacia arriba -->
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/tvItemScheduleTema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Theme"
+                android:textSize="20sp"
+                android:textColor="@color/purple_500"
+                android:ellipsize="end"
+                android:lines="1"/>
+            <TextView
+                android:id="@+id/tvItemScheduleTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speaker name"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:lines="1"/>
+            <TextView
+                android:id="@+id/tvItemScheduleTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LEVEL"
+                android:textSize="13sp"
+                android:textColor="@color/teal_700"
+                android:ellipsize="end"
+                android:lines="1"/>
+
+                <!--Con ellipsize ponemos puntos suspensivos
+                 si es que el textp es muy largo, con lines = 1
+                 decirmos que se visualice solo 1 linea del texto-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

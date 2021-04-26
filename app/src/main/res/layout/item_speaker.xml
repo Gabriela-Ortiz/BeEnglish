@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="0dp"
+    android:layout_margin="10sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_app_be"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher Name"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/tamanioTitulo"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidad"
+        android:textSize="@dimen/tamanioTitulo"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="@color/purple_500">
+    </TextView>
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
